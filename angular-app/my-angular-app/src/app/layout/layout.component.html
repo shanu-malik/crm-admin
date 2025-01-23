@@ -1,13 +1,14 @@
-<app-header></app-header>
-
-<div style="display: flex; height: 90vh;"> <!-- Set height to 100vh for full viewport height -->
-  <!-- Sidebar -->
-  <div style="display: inline-block; width: 15%; height: 100%;"> <!-- Sidebar takes full height -->
+<mat-sidenav-container class="h-screen">
+  <!-- Sidebar (Sidenav) -->
+  <mat-sidenav #sidenav mode="side" opened class="w-60 bg-gray-800 text-white">
     <app-sidebar></app-sidebar>
-  </div>
-
-  <!-- Main Content (router outlet) -->
-  <div style="display: inline-block; width: 85%; height: 100%; margin:10px"> <!-- Main content takes full height -->
-    <router-outlet></router-outlet>
-  </div>
-</div>
+  </mat-sidenav>
+  <!-- Main Content Area -->
+  <mat-sidenav-content class="flex flex-col h-screen">
+    <app-header [sidenav]="sidenav" ></app-header>
+    <!-- Main Content -->
+    <div class="flex-grow p-4 overflow-auto">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
