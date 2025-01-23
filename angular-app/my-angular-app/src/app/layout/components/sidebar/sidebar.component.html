@@ -1,29 +1,22 @@
-<div class="d-flex flex-column flex-shrink-0 p-3 bg-light vh-100" style="width: 280px;">
-    
-    <ul class="nav nav-pills flex-column mb-auto">
-      <li>
-        <a routerLink="/dashboard" routerLinkActive ="active" class="nav-link link-dark">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-          Dashboard
-        </a>
-      </li>
-      <li>
-        <a routerLink="/master"  routerLinkActive ="active" class="nav-link link-dark">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
-          Orders
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link link-dark">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
-          Products
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link link-dark">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-          Customers
-        </a>
-      </li>
-    </ul>
-  </div>
+<mat-sidenav-container class="sidenav-container">
+  <!-- Side navigation (Sidenav) -->
+  <mat-sidenav #sidenav mode="side" opened class="sidenav">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/dashboard" routerLinkActive="active">
+        <mat-icon>dashboard</mat-icon>
+        <span>Dashboard</span>
+      </a>
+      <a mat-list-item routerLink="/master" routerLinkActive="active">
+        <mat-icon>shopping_cart</mat-icon>
+        <span>Orders</span>
+      </a>
+      <a mat-list-item href="#">
+        <mat-icon>category</mat-icon>
+        <span>Products</span>
+      </a>
+      <a mat-list-item href="#">
+        <mat-icon>people</mat-icon>
+        <span>Customers</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>

@@ -1,15 +1,13 @@
 <app-header></app-header>
 
-<div class="container-fluid">
-  <div class="row">
-    <!-- Sidebar -->
-    <div class="col-3">
-      <app-sidebar></app-sidebar>
-    </div>
+<div style="display: flex; height: 90vh;"> <!-- Set height to 100vh for full viewport height -->
+  <!-- Sidebar -->
+  <div style="display: inline-block; width: 15%; height: 100%;"> <!-- Sidebar takes full height -->
+    <app-sidebar></app-sidebar>
+  </div>
 
-    <!-- Main Content (router outlet) -->
-    <div class="col-9">
-      <router-outlet></router-outlet>
-    </div>
+  <!-- Main Content (router outlet) -->
+  <div style="display: inline-block; width: 85%; height: 100%; margin:10px"> <!-- Main content takes full height -->
+    <router-outlet></router-outlet>
   </div>
 </div>
