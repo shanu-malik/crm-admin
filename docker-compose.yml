@@ -1,4 +1,4 @@
-version: "3"
+version: "3.8"
 services:
   angular-app:
     container_name: angular-container
@@ -7,5 +7,6 @@ services:
       - "4200:4200"
     volumes:
       - .:/app
+      - /app/node_modules
     working_dir: /app
     command: ["ng", "serve", "--host", "0.0.0.0"]
