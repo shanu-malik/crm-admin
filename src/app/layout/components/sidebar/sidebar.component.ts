@@ -10,7 +10,6 @@ import { RouterModule } from '@angular/router';
 import { MatSidenav } from '@angular/material/sidenav';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDialogModule } from '@angular/material/dialog';
-import { SubmenuDialogComponent } from '../../../shared/components/submenu-dialog/submenu-dialog.component';
 import { MatDialog } from '@angular/material/dialog';
 
 

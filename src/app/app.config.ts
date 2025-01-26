@@ -9,6 +9,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptor } from './core/interceptors/auth.interceptor';
+import { SharedModule } from './shared/shared.module';
+import { ToasterService } from './core/services/notifications/notification.service';
 
 import { routes } from './app.routes';
 
@@ -23,10 +25,11 @@ export const appConfig: ApplicationConfig = {
     FormsModule,
     MatPaginatorModule,
     MatTableModule,
+    ToasterService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptor, // Register the interceptor
       multi: true
-    }
-  ]
+    },
+  ],
 };

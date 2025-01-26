@@ -1,9 +1,0 @@
-<h1 mat-dialog-title>Submenu</h1>
-<div mat-dialog-content>
-  <mat-list>
-    <mat-list-item *ngFor="let item of data.submenuItems" [attr.aria-hidden]="item.hidden ? 'true' : null">
-      <mat-icon mat-list-icon>{{ item.icon }}</mat-icon>
-      <span>{{ item.name }}</span>
-    </mat-list-item>
-  </mat-list>
-</div>

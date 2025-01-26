@@ -1,16 +1,26 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-/* styles.scss */
-body {
-    transition: background-color 0.3s ease, color 0.3s ease;
+/* toaster-styles.css */
+::ng-deep .mat-snack-bar-container.success-snackbar {
+    background-color: #388e3c !important; /* Dark green */
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0, 200, 0, 0.5);
   }
   
-  button {
-    padding: 10px;
-    border: none;
-    color: white;
+  ::ng-deep .mat-snack-bar-container.success-snackbar:hover {
+    background-color: #4caf50 !important; /* Lighter green on hover */
+    box-shadow: 0 3px 15px rgba(0, 255, 0, 0.6);
   }
+
+  .customClass{
+    color: red;
+  }
+  
+ 
+
+
   

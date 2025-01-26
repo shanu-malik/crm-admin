@@ -1,0 +1,48 @@
+/* toaster-styles.css */
+::ng-deep .mat-snack-bar-container.success-snackbar {
+    background-color: #388e3c !important; /* Dark green */
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0, 200, 0, 0.5);
+  }
+  
+  ::ng-deep .mat-snack-bar-container.success-snackbar:hover {
+    background-color: #4caf50 !important; /* Lighter green on hover */
+    box-shadow: 0 3px 15px rgba(0, 255, 0, 0.6);
+  }
+  
+  ::ng-deep .mat-snack-bar-container.error-snackbar {
+    background-color: #f44336 !important;
+    color: white !important;
+  }
+  
+  
+  ::ng-deep .mat-snack-bar-container.error-snackbar:hover {
+    background-color: #f44336 !important; /* Lighter red on hover */
+    box-shadow: 0 3px 15px rgba(255, 0, 0, 0.6);
+  }
+  
+  ::ng-deep .mat-snack-bar-container.info-snackbar {
+    background-color: #1976d2 !important; /* Blue */
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0, 123, 255, 0.5);
+  }
+  
+  ::ng-deep .mat-snack-bar-container.info-snackbar:hover {
+    background-color: #2196f3 !important; /* Lighter blue on hover */
+    box-shadow: 0 3px 15px rgba(0, 123, 255, 0.6);
+  }
+  
+  ::ng-deep .mat-snack-bar-container.warning-snackbar {
+    background-color: #f57c00 !important; /* Dark orange */
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(255, 165, 0, 0.5);
+  }
+  
+  ::ng-deep .mat-snack-bar-container.warning-snackbar:hover {
+    background-color: #ff9800 !important; /* Lighter orange on hover */
+    box-shadow: 0 3px 15px rgba(255, 165, 0, 0.6);
+  }
+  
